@@ -3,6 +3,9 @@ class SearchesController < ApplicationController
   def search 
   end
 
+  def _something
+  end
+
   def music
     begin
       @resp = Faraday.get "https://deezerdevs-deezer.p.mashape.com/search?q=" do |req|
